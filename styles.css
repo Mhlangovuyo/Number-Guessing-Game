@@ -1,0 +1,147 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(45deg, #ff6a00, #ee0979, #ff6a00);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    text-align: center;
+    transition: background 0.5s ease;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:20px 40px;
+    border-radius: 100px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    color: #fffe00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #ff4500, 0 0 25px #ff4500;
+  }
+  
+  .description {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #ffecb3;
+  }
+  
+  .game-box {
+    margin-bottom: 25px;
+  }
+  
+  .label {
+    font-size: 1.2rem;
+    color: #ffefd5;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    padding: 15px;
+    font-size: 1.4rem;
+    border: 2px solid #ff6a00;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 280px;
+    margin-right: 10px;
+    background-color: #ffeb3b;
+    color: #444;
+  }
+  
+  .button {
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:disabled {
+    background-color: #aaa;
+  }
+  
+  .button:hover {
+    background-color: #ff4500;
+  }
+  
+  .feedback {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .attempts {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .message-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 350px;
+    margin: 0 auto;
+    font-style: italic;
+  }
+  
+  .message {
+    color: #fffe00;
+  }
+  
+  /* Hot or Cold feedback */
+  .hot {
+    color: #ff5733;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ff4500;
+  }
+  
+  .cold {
+    color: #33b5ff;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #00b0ff;
+  }
+  
+  /* Success feedback */
+  .success {
+    color: #28a745;
+    text-shadow: 2px 2px 8px rgba(0, 255, 0, 0.6);
+  }
+  
